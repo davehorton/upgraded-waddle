@@ -1,0 +1,32 @@
+@import "~tailwindcss/base";
+@import "~tailwindcss/components";
+@import "~tailwindcss/utilities";
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+
+
+$primary-color: #482ff7;
+$secondary-color: #fc5c9c;
+
+
+body {
+  color: $primary-color;
+  @apply text-base antialiased;
+  font-family: 'Work Sans', sans-serif;
+}
+
+h1 {
+    color: $secondary-color;
+}
+
+//buttonsUI
+.btn {
+  @apply inline-block px-24 py-8 rounded text-white;
+}
+
+.btn--primary {
+  @apply bg-black text-white border border-black;
+}
+
+.btn--white {
+  @apply bg-white border border-white text-black;
+}
