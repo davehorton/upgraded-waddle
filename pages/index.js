@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import Header from "../components/Header";
+import { Header, Footer } from "../components";
 import "../styles/sass/style.scss";
 
 const Home = () => (
@@ -10,6 +10,7 @@ const Home = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <Header />
+    <Footer />
   </div>
 );
 

@@ -1,4 +1,7 @@
 export default {
   HOME: "/",
-  PRICING: "/pricing"
+  PRICING: "/pricing",
+  DOCS: "/docs",
+  REGISTER: "/register",
+  SIGNIN: "/signin",
 };

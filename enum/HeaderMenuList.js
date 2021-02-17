@@ -1,18 +1,20 @@
+import INTERNAL_LINKS from "./InternalLinks";
+
 export default [
   {
     label: "Pricing",
-    url: "/pricing"
+    url: INTERNAL_LINKS.PRICING
   },
   {
     label: "Docs",
-    url: "/docs"
+    url: INTERNAL_LINKS.DOCS
   },
   {
     label: "Register",
-    url: "/register"
+    url: INTERNAL_LINKS.REGISTER
   },
   {
     label: "Sign In",
-    url: "/signin"
+    url: INTERNAL_LINKS.SIGNIN
   }
 ];
