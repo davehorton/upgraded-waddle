@@ -8,7 +8,7 @@ import "./style.scss";
 
 const Footer = () => {
   return (
-    <div className="main-footer px-4 py-12 flex flex-col justify-center items-center md:px-12">
+    <div className="main-footer px-4 pt-12 pb-8 flex flex-col justify-center items-center md:px-12">
       <div className="main-footer-container">
         {FOOTER_MENULIST.map((row, index) => (
           <div key={index} className="flex justify-between">

@@ -67,7 +67,7 @@ const Header = () => {
           placement="bottomRight"
           onVisibleChange={setVisible}
         >
-          <i className="fas fa-bars" />
+          <i className="fas fa-bars text-base" />
         </Popover>
       </div>
     </div>

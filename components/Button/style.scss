@@ -1,3 +1,5 @@
+@import "../../styles/sass/mixins.scss";
+
 .custom-button {
   display: flex !important;
   align-items: center;
@@ -6,10 +8,11 @@
   border-radius: 4px !important;
   border: none !important;
   background: #D91C5C !important;
-  font-family: 'Work Sans', sans-serif;
-  font-style: normal !important;
-  font-weight: 500 !important;
-  font-size: 24px !important;
-  line-height: 22px !important;
+  @include app-font(24px, 22px, 500);
   padding: 0 2rem !important;
+
+  @media (max-width: 575.98px) {
+    height: 41px !important;
+    @include app-font(18px, 22px, 500);
+  }
 }

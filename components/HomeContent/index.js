@@ -38,7 +38,9 @@ const HomeContent = () => {
             }`}
           >
             <h6 className="history-item-title text-third">{prop.title}</h6>
-            <p className="history-item-text text-fourth">{prop.text}</p>
+            {prop.text.map((item, index) => (
+              <p key={index} className="history-item-text text-fourth">{item}</p>
+            ))}
             <div className="history-item-icon">
               <img src={prop.icon} alt="prop-icon" />
             </div>
