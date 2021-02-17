@@ -12,6 +12,7 @@ body {
   color: $primary-color;
   @apply text-base antialiased;
   font-family: 'Work Sans', sans-serif;
+  height: calc(100vh - 4rem) !important;
 }
 
 h1 {
@@ -29,4 +30,34 @@ h1 {
 
 .btn--white {
   @apply bg-white border border-white text-black;
+}
+
+h1 {
+  font-weight: 600 !important;
+  font-size: 60px;
+  margin-bottom: 0 !important;
+  font-family: 'Work Sans', sans-serif;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 400 !important;
+  margin-bottom: 0 !important;
+  font-family: 'Work Sans', sans-serif;
+}
+
+h5 {
+  font-size: 22px;
+  font-weight: 400 !important;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.page-container {
+  height: calc(100vh - 4rem);
+  overflow: auto;
+  margin-top: 4rem;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
