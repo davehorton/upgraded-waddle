@@ -1,11 +1,30 @@
-import * as React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
+import { Popover } from "antd";
 
 import { HEADER_MENULIST, INTERNAL_LINKS } from "../../enum";
 
 import "./style.scss";
 
 const Header = () => {
+  const [visible, setVisible] = useState(false);
+
+  const PopoverContent = () => {
+    return (
+      <ul className="mb-0 w-40">
+        {HEADER_MENULIST.filter(menu => menu.label !== "Sign In").map(
+          (menu, index) => (
+            <li key={index}>
+              <Link href={menu.url}>
+                <a className="text-base text-gray-700 hover:text-gray-700">{menu.label}</a>
+              </Link>
+            </li>
+          )
+        )}
+      </ul>
+    );
+  };
+
   return (
     <div className="main-header flex justify-between items-center pl-4 pr-4 md:pl-8 md:pr-16 h-16 bg-white">
       <div className="main-header-logo-desktop hidden md:inline">
@@ -41,7 +60,15 @@ const Header = () => {
             </Link>
           </li>
         </ul>
-        <i className="fas fa-bars" />
+        <Popover
+          content={<PopoverContent />}
+          trigger="click"
+          visible={visible}
+          placement="bottomRight"
+          onVisibleChange={setVisible}
+        >
+          <i className="fas fa-bars" />
+        </Popover>
       </div>
     </div>
   );

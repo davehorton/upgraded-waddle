@@ -1,8 +1,9 @@
 // next.config.js
 const withSass = require("@zeit/next-sass");
+const withCSS = require('@zeit/next-css')
 const tailwindCss = require("tailwindcss");
 
-module.exports = withSass({
+module.exports = withCSS(withSass({
 	webpack(config, options) {
 		const rules = [
 			{
@@ -25,4 +26,4 @@ module.exports = withSass({
 			module: { ...config.module, rules: [...config.module.rules, ...rules] }
 		};
 	}
-});
+}));

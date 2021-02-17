@@ -1,8 +1,16 @@
 .main-header {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
 
-  li {
+  a {
     color: #565656;
+
+    &:hover {
+      color: #565656;
+    }
+  }
+
+  ul {
+    margin-bottom: 0;
   }
 
   i {
