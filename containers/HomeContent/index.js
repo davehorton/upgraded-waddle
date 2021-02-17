@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import CustomButton from "../Button";
+import { Button } from "../../components";
 import { PROPS_LIST } from "../../enum";
 
 import "./style.scss";
@@ -17,7 +17,7 @@ const HomeContent = () => {
           Jambonz is the open source Communication API engine that you connect
           to your own applications, SIP trunks and speech services.
         </h5>
-        <CustomButton text="Sign up for free" />
+        <Button text="Sign up for free" />
       </div>
       <div className="home-page-history">
         <div className="home-page-history-top">
@@ -51,7 +51,7 @@ const HomeContent = () => {
           <div className="home-page-history-bottom-right" />
         </div>
         <div className="flex justify-center">
-          <CustomButton text="Try it Free" />
+          <Button text="Try it Free" />
         </div>
       </div>
     </div>

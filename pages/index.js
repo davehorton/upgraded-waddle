@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
-import { Header, Footer, HomeContent } from "../components";
+import { Header, Footer } from "../components";
+import HomeContent from "../containers/HomeContent";
 import "../styles/sass/style.scss";
 import 'antd/dist/antd.css';
 

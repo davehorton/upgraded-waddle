@@ -27,21 +27,25 @@ const Header = () => {
 
   return (
     <div className="main-header flex justify-between items-center pl-4 pr-4 md:pl-8 md:pr-16 h-16 bg-white">
-      <div className="main-header-logo-desktop hidden md:inline">
-        <img
-          src="/images/icon-logo.svg"
-          alt="Picture of Logo"
-          width={107}
-          height={29}
-        />
+      <div className="main-header-logo-desktop cursor-pointer hidden md:inline">
+        <Link href={INTERNAL_LINKS.HOME}>
+          <img
+            src="/images/icon-logo.svg"
+            alt="Picture of Logo"
+            width={107}
+            height={29}
+          />
+        </Link>
       </div>
-      <div className="main-header-logo-desktop inline md:hidden">
-        <img
-          src="/images/img-logo.svg"
-          alt="Image of Logo"
-          width={122}
-          height={40}
-        />
+      <div className="main-header-logo-desktop cursor-pointer inline md:hidden">
+        <Link href={INTERNAL_LINKS.HOME}>
+          <img
+            src="/images/img-logo.svg"
+            alt="Image of Logo"
+            width={122}
+            height={40}
+          />
+        </Link>
       </div>
       <ul className="hidden md:flex">
         {HEADER_MENULIST.map((menu, index) => (
