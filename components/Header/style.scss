@@ -4,4 +4,29 @@
   li {
     color: #565656;
   }
+
+  i {
+    color: #565656;
+    cursor: pointer;
+  }
+
+  &-logo-desktop {
+    width: 107px;
+    height: 29px;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &-logo-mobile {
+    width: 122px;
+    height: 40px;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
 }
