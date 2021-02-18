@@ -1,0 +1,85 @@
+@import "../../styles/sass/mixins.scss";
+
+.pricing-content {
+  background-color: #e5e5e5;
+  padding: 4rem 1rem 94px;
+
+  @media (max-width: 575.98px) {
+    padding: 24px 1rem 56px;
+
+    h2 {
+      @include app-font(32px, 38px, 400);
+      margin-bottom: 1rem !important;
+    }
+
+    h3 {
+      @include app-font(24px, 28px, 400);
+    }
+
+    h4 {
+      @include app-font(24px, 28px, 400);
+    }
+  }
+
+  &-every {
+    width: calc(100% + 1rem);
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    justify-content: center;
+
+    @media (max-width: 767.98px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .price-card1 {
+    @media (max-width: 575.98px) {
+      width: 100%;
+    }
+  }
+
+  .price-card2 {
+    width: 300px;
+
+    @media (max-width: 575.98px) {
+      width: 100%;
+    }
+  }
+
+  .add-ons-table {
+    max-width: 804px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 230px;
+
+    @media (max-width: 639.98px) {
+      grid-template-columns: 1fr;
+    }
+
+    &-th {
+      padding: 32px 32px 23px;
+      border-bottom: 1px solid #d9d9d9;
+      font-family: "Work Sans", sans-serif;
+
+      @media (max-width: 639.98px) {
+        padding: 1rem;
+      }
+    }
+
+    &-td {
+      padding: 28px 32px;
+      font-family: "Work Sans", sans-serif;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #d9d9d9;
+      }
+
+      @media (max-width: 639.98px) {
+        padding: 1rem;
+      }
+    }
+  }
+}

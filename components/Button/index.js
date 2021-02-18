@@ -9,12 +9,12 @@ class CustomButton extends React.Component {
     const {
       type,
       text,
-      size_custom,
+      size,
       className,
       iconPosition,
       ...rest
     } = this.props;
-    const newClassName = `custom-button ${type} ${size_custom} ${iconPosition} ${className}`;
+    const newClassName = `custom-button ${type} ${size} ${iconPosition} ${className}`;
 
     return (
       <Button {...rest} type={type} className={newClassName}>
@@ -28,7 +28,7 @@ CustomButton.propTypes = {
   className: PropTypes.string,
   text: PropTypes.string,
   type: PropTypes.string,
-  size_custom: PropTypes.string,
+  size: PropTypes.string,
   iconPosition: PropTypes.string
 };
 
@@ -36,7 +36,7 @@ CustomButton.defaultProps = {
   className: "",
   text: "",
   type: "primary",
-  size_custom: "lg",
+  size: "lg",
   iconPosition: "right"
 };
 

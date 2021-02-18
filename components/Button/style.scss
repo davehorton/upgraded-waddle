@@ -11,6 +11,12 @@
   @include app-font(24px, 22px, 500);
   padding: 0 2rem !important;
 
+  &.sm {
+    height: 42px !important;
+    @include app-font(16px, 24px, 500);
+    padding: 0 27px !important;
+  }
+
   @media (max-width: 575.98px) {
     height: 41px !important;
     @include app-font(18px, 22px, 500);
