@@ -43,6 +43,13 @@
 
   .price-card2 {
     width: 300px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    align-items: flex-start;
+
+    p {
+      line-height: 18.77px;
+    }
 
     @media (max-width: 575.98px) {
       width: 100%;

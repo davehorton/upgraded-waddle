@@ -26,7 +26,7 @@ const HomeContent = () => {
             src="/images/img-logo-big.svg"
             alt="big-logo"
           />
-          <div className="home-page-history-top-phone flex justify-center items-center rounded-full bg-white">
+          <div className="home-page-history-top-phone flex justify-center items-center rounded-full bg-white shadow-primary">
             <img src="/images/icon-phone.svg" alt="phone-icon" />
           </div>
         </div>
@@ -41,7 +41,7 @@ const HomeContent = () => {
             {prop.text.map((item, index) => (
               <p key={index} className="history-item-text text-fourth">{item}</p>
             ))}
-            <div className="history-item-icon">
+            <div className="history-item-icon shadow-primary">
               <img src={prop.icon} alt="prop-icon" />
             </div>
           </div>

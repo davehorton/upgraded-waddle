@@ -10,7 +10,7 @@ const PriceCard2 = ({ className, title, text }) => (
     )}
   >
     <h6 className="text-2xl font-medium text-fourth">{title}</h6>
-    <p className="text-base font-normal text-third">
+    <p className="text-base font-normal text-third mb-0">
       {text}
     </p>
   </div>

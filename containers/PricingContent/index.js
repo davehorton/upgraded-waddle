@@ -115,9 +115,12 @@ const PricingContent = () => {
         <h6 className="font-normal sm:text-center text-base text-fourth mb-2 sm:mb-4">
           Contact us for additional information at
         </h6>
-        <h6 className="font-medium sm:text-center text-base text-primary mb-0">
+        <a
+          className="flex font-normal sm:justify-center text-base text-primary mb-0 hover:text-primary"
+          href="mailto:sales@jambonz.org"
+        >
           sales@jambonz.org
-        </h6>
+        </a>
       </div>
       <Button size="sm" className="mt-8 sm:mt-16 mx-auto" text="Register Now" />
     </div>
